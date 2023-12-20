@@ -1,0 +1,22 @@
+<div id="initialGreeting">
+  Hey comrade, you're on <span id="aWebsite" style="text-decoration: underline;">a website</span>. 
+  <span id="greeting" style="display: none;">I made this website and now you're viewing <span id="theWebsite" style="text-decoration: underline;">the website.</span></span>
+  <!-- <span id="causal" style="display: none;">I guess we'll <u id="actCausal">act casual</u> about it.</span>   -->
+  <!-- <span id="causal" style="display: none;">I guess we'll <span id="actCausal" style="text-decoration: underline;">act casual</span> about it.</span> -->
+  <span id="causal" style="display: none;">I guess we'll <a href="thoughts.html">act casual about it.</a></span>
+</div>
+
+<script>
+  document.getElementById('aWebsite').addEventListener('click', function() {
+    document.getElementById('greeting').style.display = 'inline';
+    document.getElementById('aWebsite').style.textDecoration = 'none';
+  });
+  document.getElementById('theWebsite').addEventListener('click', function() {
+    document.getElementById('causal').style.display = 'inline';
+    document.getElementById('theWebsite').style.textDecoration = 'none';
+  });
+  document.getElementById('actCausal').addEventListener('click', function() {
+    document.getElementById('thoughts').style.display = 'inline';
+    document.getElementById('actCausal').style.textDecoration = 'none';
+  });
+</script>
